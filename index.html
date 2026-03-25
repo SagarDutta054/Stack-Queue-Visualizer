@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack-Queue Visualizer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Stack/Queue visualizer</h1>
+      </header>
+      <main>
+        <div class="box-left">
+          <div class="part-1">
+            <div class="single-row">
+              <h2>Datatype</h2>
+              <select name="" id="option-list">
+                <!-- <option value="" selected disabled>Select option</option> -->
+                <option value="stack" selected>Stack</option>
+                <option value="queue">Queue</option>
+              </select>
+            </div>
+
+            <!-- <br /> -->
+            <div class="single-row">
+              <h2>Capacity</h2>
+              <input type="number" value="5" id="capacity-val" />
+            </div>
+
+            <button id="save-config-btn">Save configuration</button>
+            <button id="clear-container-btn">Reset container</button>
+            <div class="msg">
+              <p class="message-text" id="save-message">Configuration saved!</p>
+            </div>
+          </div>
+          <div class="part-2">
+            <h2>Insert</h2>
+            <div class="single-row">
+              <input type="text" id="insert-val" />
+              <button id="insert-btn">Push</button>
+            </div>
+            <div class="msg">
+              <p class="message-text" id="insert-message">
+                Last inserted element is: 10
+              </p>
+            </div>
+          </div>
+          <div class="part-3">
+            <h2>Delete</h2>
+            <button id="delete-btn">Pop</button>
+            <div class="msg">
+              <p class="message-text" id="delete-message">
+                Last deleted element is: 10
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="box-right">
+          <div class="data-type-container" id="data-type-container">
+            <!-- <div class="element-box">1</div>
+            <div class="element-box">2</div>
+            <div class="element-box">3</div>
+            <div class="element-box">4</div>
+            <div class="element-box">5</div>
+            <div class="element-box">6</div>
+            <div class="element-box">7</div>
+            <div class="element-box">8</div>
+            <div class="element-box">9</div>
+            <div class="element-box">10</div>
+            <div class="element-box">11</div>
+            <div class="element-box">12</div>
+            <div class="element-box">13</div> -->
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
